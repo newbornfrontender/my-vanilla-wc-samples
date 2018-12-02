@@ -4,15 +4,7 @@ import './my-components-list-item.js';
 
 const template = document.createElement('template');
 
-const components = ['my-greeting'];
-
-const list = [
-  {
-    page: components.map((item) => item),
-    title: components.map((item) => `Страница с кастомным элементом ${item}`),
-    text: components.map((item) => `Кастомный элемент ${item}`),
-  },
-];
+const list = ['my-greeting'];
 
 class MyComponentsList extends HTMLElement {
   constructor() {
@@ -34,12 +26,12 @@ class MyComponentsList extends HTMLElement {
 
       <${this.tag || 'ul'}>
         ${list
-          .map(({ page, title, text }) => {
+          .map((item) => {
             return `
               <my-components-list-item
-                my-page="${page}"
-                my-title="${title}">
-                ${text}
+                my-page="${item}"
+                my-title="Страница с кастомным элементом ${item}">
+                ${item}
               </my-components-list-item>
             `;
           })

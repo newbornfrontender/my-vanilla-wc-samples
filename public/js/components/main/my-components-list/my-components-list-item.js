@@ -30,11 +30,19 @@ class MyComponentsListItem extends HTMLElement {
           text-shadow: 2px 2px 4px #525252;
           background-color: cornflowerblue;
         }
+
+        span {
+          color: chocolate;
+        }
+
+        a:hover span {
+          color: orange;
+        }
       </style>
 
       <li>
         <a href="/${this.page}.html" title="${this.title}">
-          <slot></slot>
+          Кастомный элемент <span><slot></slot></span>
         </a>
       </li>
     `;
