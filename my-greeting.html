@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Компонент - my-greeting</title>
+
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="list">
+          <li>
+            <a class="link link_repo" href="/index.html">Назад к компонентам</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrapper wrapper_component">
+        <my-greeting my-msg="кастомный"></my-greeting>
+      </section>
+    </main>
+
+    <script type="module">
+      import 'https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js?module';
+
+      WebComponents.waitFor(() =>
+        import('/js/components/examples/my-greeting.js'),
+      );
+    </script>
+  </body>
+</html>
