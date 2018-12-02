@@ -1,0 +1,9 @@
+{
+  "name": "my-vanilla-wc-samples",
+  "version": "1.0.0",
+  "description": "Простые примеры моих веб-компонентов",
+  "repository": "https://github.com/newbornfrontender/my-vanilla-wc-samples.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
