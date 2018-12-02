@@ -5,5 +5,13 @@
   "repository": "https://github.com/newbornfrontender/my-vanilla-wc-samples.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "prettier": "prettier --write *.{html,json}",
+    "stylelint:check": "stylelint-config-prettier-check",
+    "stylelint:fix": "stylelint --fix css/*.css",
+    "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
+    "eslint:fix": "eslint --fix js/**/*.js",
+    "serve": "serve"
+  }
 }
