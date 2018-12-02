@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html dir="ltr" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Моя тестовая коллекция нативных веб-компонентов</title>
+
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="list">
+          <li>
+            <a class="link link_repo" href="/" title="Мой GitHub репозиторий"
+              >GitHub репозиторий</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrapper wrapper_index">
+        <my-components-list></my-components-list>
+      </section>
+    </main>
+
+    <script type="module">
+      import 'https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js?module';
+
+      WebComponents.waitFor(() =>
+        import('/js/components/main/my-components-list/index.js'),
+      );
+    </script>
+  </body>
+</html>
