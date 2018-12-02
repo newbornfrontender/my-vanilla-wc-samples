@@ -1,0 +1,11 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "impliedStrict": true
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"]
+}
