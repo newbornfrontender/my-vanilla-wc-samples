@@ -13,5 +13,16 @@
     "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix js/**/*.js",
     "serve": "serve"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "prettier": "^1.15.3",
+    "serve": "^10.1.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-prettier": "^1.0.5"
   }
 }
