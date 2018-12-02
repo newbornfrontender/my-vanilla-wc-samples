@@ -12,7 +12,7 @@
     "stylelint:fix": "stylelint --fix **/*.css",
     "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
     "eslint:fix": "eslint --fix **/*.js",
-    "serve": "serve"
+    "serve": "serve public"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
