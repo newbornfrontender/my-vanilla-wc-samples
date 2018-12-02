@@ -7,11 +7,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "prettier": "prettier --write *.{html,json}",
+    "prettier": "prettier --write **/*.{html,json}",
     "stylelint:check": "stylelint-config-prettier-check",
-    "stylelint:fix": "stylelint --fix css/*.css",
+    "stylelint:fix": "stylelint --fix **/*.css",
     "eslint:check": "eslint --print-config . | eslint-config-prettier-check",
-    "eslint:fix": "eslint --fix js/**/*.js",
+    "eslint:fix": "eslint --fix **/*.js",
     "serve": "serve"
   },
   "devDependencies": {
